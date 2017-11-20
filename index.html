@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>‰Á‘¬“xƒZƒ“ƒT[‚Ì’l‚ğæ‚é</title>
+    <title>åŠ é€Ÿåº¦ã‚»ãƒ³ã‚µãƒ¼ã®å€¤ã‚’å–ã‚‹</title>
     <style>
       @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
       html, body{
@@ -17,7 +17,7 @@
   </head>
   <body>
     <header>
-      <h1>d—Í‰Á‘¬“x‚ğœ‚¢‚½‰Á‘¬“x ‰Á‘¬“x ‰ñ“]‘¬“x</h1>
+      <h1>é‡åŠ›åŠ é€Ÿåº¦ã‚’é™¤ã„ãŸåŠ é€Ÿåº¦ åŠ é€Ÿåº¦ å›è»¢é€Ÿåº¦</h1>
     </header>
     <main>
       <div>
@@ -45,25 +45,25 @@
     <script>
       (function() {
         window.addEventListener("devicemotion", function(e){
-          //‰Á‘¬“x
+          //åŠ é€Ÿåº¦
           var acc = e.acceleration;
           var x = obj2NumberFix(acc.x, 5);
           var y = obj2NumberFix(acc.y, 5);
           var z = obj2NumberFix(acc.z, 5);
-          //ŒX‚«(d—Í‰Á‘¬“x)
+          //å‚¾ã(é‡åŠ›åŠ é€Ÿåº¦)
           var acc_g = e.accelerationIncludingGravity;
           var gx = obj2NumberFix(acc_g.x, 5);
           var gy = obj2NumberFix(acc_g.y, 5);
           var gz = obj2NumberFix(acc_g.z, 5);
-          //‰ñ“]’l
+          //å›è»¢å€¤
           var rota_r = e.rotationRate;
-          var a = obj2NumberFix(rota_r.alpha, 5); //z•ûŒü
-          var b = obj2NumberFix(rota_r.beta, 5); //x•ûŒü
-          var g = obj2NumberFix(rota_r.gamma, 5); // y•ûŒü
-          //•\¦
-          print3('acc-x', x, 'acc-y', y, 'acc-z', z); //‰Á‘¬“x
-          print3('acc-gx', gx, 'acc-gy', gy, 'acc-gz', gz); //ŒX‚«
-          print3('rr-a', a, 'rr-b', b, 'rr-g', g); //‰ñ“]’l
+          var a = obj2NumberFix(rota_r.alpha, 5); //zæ–¹å‘
+          var b = obj2NumberFix(rota_r.beta, 5); //xæ–¹å‘
+          var g = obj2NumberFix(rota_r.gamma, 5); // yæ–¹å‘
+          //è¡¨ç¤º
+          print3('acc-x', x, 'acc-y', y, 'acc-z', z); //åŠ é€Ÿåº¦
+          print3('acc-gx', gx, 'acc-gy', gy, 'acc-gz', gz); //å‚¾ã
+          print3('rr-a', a, 'rr-b', b, 'rr-g', g); //å›è»¢å€¤
           // function
           function obj2NumberFix(obj, fix_deg){
             return Number(obj).toFixed(fix_deg);
